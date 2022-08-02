@@ -13,7 +13,7 @@ if basename(sys.argv[0]) == "ipykernel_launcher.py":
     args = parser.parse_args(['docker-compose.yml'])
 else:
     args = parser.parse_args()
-    
+
 file_to_operate = args.composefile[0]
 
 with open(file_to_operate) as composefile:
